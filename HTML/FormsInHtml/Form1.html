@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" required>
+        </div>
+        <div>
+            <label for="pass">Password</label><br>
+            <input type="password" id="pass" required>
+        </div>
+        <div>
+            <label for="mail">Email</label><br>
+            <input type="email" id="mail" required placeholder="abc@gmail.com">
+        </div>
+        <div>
+            <label for="numb">Age</label><br>
+            <input type="number" id="numb" required>
+        </div>
+        <div>
+            <label for="date">Date</label><br>
+            <input type="date" id="date" required>
+        </div>
+        <div>
+            <label for="range">Range</label><br>
+            <input type="range" id="range" min="10" max="100" step="10"
+            >
+        </div>
+        <input type="submit" 
+    </form>
+
+    <!-- name , value , disabled attribute  -->
+    <form>
+        <div>
+            <label for="username">Username</label><br>
+            <input type="text" name="username" id="username" required>
+        </div>
+        <div>
+            <label for="pass">Password</label><br>
+            <input type="password" id="pass" required>
+        </div>
+        <div>
+            <label for="country">Country</label><br>
+            <input type="text" name="country" value="India" id="country" required placeholder="country" disabled>
+        </div>
+    </form>
+</body>
+</html>

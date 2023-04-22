@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+
+    <style>
+
+        /* This will make the items align to the cross axis i.e the axis purpendicular to the base axis  */
+        /* first doing it for direction row  */
+          #container{
+            height: 500px;
+            width: 500px;
+            background-color: grey;
+            display: flex; 
+            /* align-items: end; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: center; */
+             /* align-items: stretch;  Will Note work if height and width are already set means it respect the height and width of the element and inorder to make it work we made height */
+             /* align-items: baseline; */
+
+             /* Centering a DIV  ***IMP*** */
+
+             align-items: center;
+             justify-content: center;
+          }
+
+          #container div{
+            /* height: auto; */
+            max-height: 300px; /*To adjust the height and width of the containers using stretch  */
+            height: 100px;
+            width: 100px;
+        }
+
+        #div1{
+            background-color: blue;
+            /* margin: 10px; */
+            
+
+        }
+
+        #div2{
+            background-color: aqua;
+            /* margin: 20px; */
+        }
+
+        #div3{
+            background-color: red;
+            /* margin: 30px; */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="div1">Div1</div>
+        <div id="div2">Div2</div>
+        <div id="div3">Div2</div>
+    </div>
+</body>
+</html>

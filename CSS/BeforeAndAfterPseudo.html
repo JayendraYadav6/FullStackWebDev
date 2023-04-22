@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Elements</title>
+
+    <style>
+        p{
+            background-color: grey;
+        }
+
+        #para1::before{
+            content: 'Legend';
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+
+        #para1::after{
+            content: '';
+            background-image: url(../Images/author-pic.png);
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-size: contain;
+            /* background-repeat: no-repeat */
+        }
+
+        /* Adding Quotes to text  */
+
+        #para2::before{
+             content: '"';  
+        }
+        #para2::after{
+             content: '"';
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        li::before{
+            content: '';
+            background-image: url(../Images/author-pic.png);
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <p id="para1"> Jayendra Yadav is here </p>
+
+    <p id="para2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed beatae nesciunt modi voluptatibus in cum explicabo laborum quidem placeat molestiae sapiente, doloremque natus amet nam error hic? A quae ullam, enim reprehenderit modi officia unde cupiditate distinctio itaque autem, reiciendis perferendis excepturi ipsa natus nostrum optio illum totam provident repellat.</p>
+
+    <ul>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+    </ul>
+</body>
+</html>

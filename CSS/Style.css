@@ -1,0 +1,18 @@
+p{
+    color: aqua;
+    font-size: 30px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    color: black;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+#para{
+    color: darkmagenta;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

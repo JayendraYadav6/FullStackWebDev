@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightBox Animation</title>
+
+    <style>
+
+        #container{
+            height: 0;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            transition: all 2s ease-in-out;
+        }
+
+        #container:target{
+            height: 300px;
+            width: 300px;
+            background-color: rgba(186, 237, 255, 0.2);
+            top: 25%;
+            left: 25%;
+        } 
+        
+    </style>
+</head>
+<body>
+    <a href="#container" id="lightbox">LightBox</a>
+
+      <div id="container">
+          <a href="#">X</a>
+          <p>Jayendra Yadav is here baby</p>
+      </div>
+</body>
+</html>

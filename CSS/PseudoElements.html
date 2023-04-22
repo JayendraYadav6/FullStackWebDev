@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+        #para1::first-letter{
+            font-size: 1.5rem;
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+        #para1::first-line{
+            font-size: 1.5rem;
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+
+        #para2::before{
+            content: 'Jayendra';
+            font-size: 1.5rem;
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+
+        #para2::after{
+            content: 'Yadav';
+            font-size: 1.5rem;
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- <p id="para1">this is a paragraph</p>
+    <p>jayendra yadav is a legend</p> -->
+
+    <p id="para2"> heading </p>
+</body>
+</html>

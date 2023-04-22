@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+
+    <style>
+        #outerdiv{
+            border: 2px solid black;
+        }
+
+        #div1{
+            height: 300px;
+            width: 300px;
+            background-color: brown;
+        }
+        #div2{
+            height: 300px;
+            width: 300px;
+            background-color: chartreuse;
+
+            /* position: relative;
+            left: 70px;
+            top: 40px; */
+
+            /* position: absolute;
+            left: 40px;
+            top: 20px; */
+
+            /* position: fixed;
+            left: 40px;
+            top: 20px; */
+
+            position: sticky;
+            left: 40px;
+            top: 20px; /*Will decide the threshold value*/
+        }
+        #div3{
+            height: 300px;
+            width: 300px;
+            background-color: darkmagenta;
+        }
+
+        p{
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outerdiv">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut consequatur soluta facere dolores nostrum odit rem error iste ipsum quae tempora accusamus, perferendis optio molestias debitis. Amet molestiae, doloribus odio ad assumenda minus inventore quasi commodi placeat deserunt fugit dicta eaque et, sapiente dolorem temporibus aperiam error deleniti perspiciatis!</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eligendi odit commodi est numquam tempora laborum voluptates repellat eveniet accusamus soluta incidunt corporis corrupti explicabo voluptas fugiat neque quaerat architecto, itaque impedit quidem vel magnam ratione tenetur? Quia sed quos, aliquid labore id impedit amet nihil. Fuga distinctio nesciunt quos?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eligendi odit commodi est numquam tempora laborum voluptates repellat eveniet accusamus soluta incidunt corporis corrupti explicabo voluptas fugiat neque quaerat architecto, itaque impedit quidem vel magnam ratione tenetur? Quia sed quos, aliquid labore id impedit amet nihil. Fuga distinctio nesciunt quos?</p>
+</body>
+</html>
