@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Tags</title>
+</head>
+<body>
+    <!-- <audio src="../Audiofiles/Ting.mp3" controls></audio>  -->
+
+    <!-- Or Second Way is  -->
+    <audio controls>
+         <source src="../Audiofiles/Ting.mp3" type="audio/mp3"> <!--Used because if you want to specify same audio file with different extension like .ogg so that if one doesn't suppoet the browser other one can  -->
+         <source src="../Audiofiles/Bing.ogg" type="audio/ogg"> <!--Used because if you want to specify same audio file with different extension like .ogg so that if one doesn't suppoet the browser other one can  -->
+    </audio>
+<br>
+    <video controls height="500px" width="500px">
+        <source src="../Videos/Wah kya scene hai_modiji meme template.mp4" type="video/mp4"> Brwser don't support the video <!--This will appeear when the browser can't able to load the video-->
+    </video>
+
+    <!-- One more tag is there that is figure tag which is generally used to add images to the html page  -->
+    <figure>
+        <img src="../Images/logo_switchtocode.png" alt="">
+        <figcaption>Logo Image</figcaption>  <!--For adding caption to the image-->
+    </figure>
+</body>
+</html>
